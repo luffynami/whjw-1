@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+	<display-name></display-name>
+	
+	
+	<servlet>
+		<servlet-name>JsonOutLogin</servlet-name>
+		<servlet-class>com.nami.jw.servlet.JsonOutLogin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>JsonOutLogin</servlet-name>
+		<url-pattern>/BaseServlet/JsonOutLogin</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>JsonOutGrade</servlet-name>
+		<servlet-class>com.nami.jw.servlet.JsonOutGrade</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>JsonOutGrade</servlet-name>
+		<url-pattern>/JwServlet/JsonOutGrade</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>JsonOutTimeTable</servlet-name>
+		<servlet-class>com.nami.jw.servlet.JsonOutTimeTable</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>JsonOutTimeTable</servlet-name>
+		<url-pattern>/JwServlet/JsonOutTimeTable</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>JsonOutExamArrange</servlet-name>
+		<servlet-class>com.nami.jw.servlet.JsonOutExamArrange</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>JsonOutExamArrange</servlet-name>
+		<url-pattern>/JwServlet/JsonOutExamArrange</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>JsonOutUserInfo</servlet-name>
+		<servlet-class>com.nami.jw.servlet.JsonOutUserInfo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>JsonOutUserInfo</servlet-name>
+		<url-pattern>/JwServlet/JsonOutUserInfo</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
